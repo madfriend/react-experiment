@@ -1,7 +1,6 @@
 {
-  "name": "react-webpack-template",
-  "version": "0.0.0",
-  "description": "",
+  "name": "I got you fam",
+  "version": "4.2.0",
   "main": "index.js",
   "scripts": {
     "start": "webpack --progress --colors --watch",

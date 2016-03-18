@@ -1,16 +1,24 @@
+var webpack = require("webpack");
+
+new webpack.DefinePlugin({
+  "process.env": {
+    NODE_ENV: JSON.stringify("production")
+  }
+});
+
 module.exports = {
-  entry: './index',
+  entry: "./index",
   output: {
-    filename: 'browser-bundle.js'
+    filename: "dist/js/browser-bundle.js"
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   module: {
     loaders: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
         query: {
-          presets: ['es2015', 'react']
+          presets: ["es2015", "react"]
         }
       },
     ]
