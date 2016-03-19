@@ -1,5 +1,5 @@
 {
-  "name": "I got you fam",
+  "name": "much-react",
   "version": "4.2.0",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.9",
+    "t7": "^0.3.0"
   }
 }

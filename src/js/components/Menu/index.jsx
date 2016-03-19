@@ -6,6 +6,6 @@ export class Menu extends React.Component {
     }
 
     render() {
-        return React.DOM.div(null, "menu");
+        return <div className="much classes">My Menu</div>
     }
 };

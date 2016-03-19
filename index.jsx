@@ -4,5 +4,5 @@ var ReactDOM = require('react-dom');
 import {Root} from './src/js/components/Root';
 
 ReactDOM.render(
-    React.createElement(Root, null),
+    <Root/>,
     document.getElementById('root'));

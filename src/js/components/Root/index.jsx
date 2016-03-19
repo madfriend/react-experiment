@@ -1,4 +1,6 @@
 var React = require("react");
+var t7 = require("t7");
+
 import {Menu} from "../Menu";
 
 export class Root extends React.Component {
@@ -7,10 +9,12 @@ export class Root extends React.Component {
     }
 
     render() {
-        return React.createElement("div", null, [
-            React.createElement(Menu, null),
-            React.DOM.h1(null, "Hello")
-        ]);
+        return (
+            <div className="wow this works">
+                <Menu/>
+                <h1>Hello?</h1>
+            </div>
+        )
     }
 };
 
