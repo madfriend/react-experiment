@@ -1,6 +1,4 @@
 var React = require("react");
-var t7 = require("t7");
-
 import {Menu} from "../Menu";
 
 export class Root extends React.Component {
