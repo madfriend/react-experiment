@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {{#repeat 5}}
+    {
+        "name": "{{company}}",
+        "id": "{{guid}}",
+        "messages": [
+            {{#repeat 30}}
+            {
+                "title": "{{lorem 5}}",
+                "body": "{{lorem 40}}",
+                "time": "{{date '2015' '2016' 'DD/MM hh:mm'}}",
+                "sender": {
+                    "avatar": "http://api.randomuser.me/portraits/med/men/{{int 1 200}}.jpg",
+                    "name": "{{firstName}} {{lastName}}",
+                    "email": "{{email}}"
+                }
+            }
+            {{/repeat}}
+        ]
+    }
+    {{/repeat}}
+  ]
+}
