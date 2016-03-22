@@ -1,5 +1,5 @@
 import React from "react";
 
-export const Folder = function(props) {
+export default function Folder(props) {
     return <div><a>{props.name}</a></div>;
 }

@@ -1,5 +1,5 @@
 import React from "react";
 
-export const MessageList = function(props) {
-    return <div></div>;
+export default function MessageList(props) {
+    return <div>MessageList</div>;
 }

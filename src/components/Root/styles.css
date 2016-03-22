@@ -1,0 +1,28 @@
+.Viewport {
+    display: flex;
+    flex-direction: row;
+}
+
+.Column {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Column-left {
+    composes: Column;
+    width: 10%;
+    /* todo: import colors from ... sass? */;
+    background-color: #252A3A;
+    color: #eee;
+}
+
+.Column-middle {
+    composes: Column;
+    width: 30%;
+    background-color: #f3f3f3;
+}
+
+.Column-right {
+    composes: Column;
+    width: 60%;
+}
