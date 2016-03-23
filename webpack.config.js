@@ -13,7 +13,7 @@ module.exports = {
   },
   devtool: "source-map",
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ["", ".js", ".jsx"]
   },
   module: {
     loaders: [
@@ -26,10 +26,11 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.s?css$/,
         loaders: [
-          'style?sourceMap',
-          'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
+          "style?sourceMap",
+          "css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]",
+          "sass"
         ]
       }
     ]

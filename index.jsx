@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 
 import Root from "./src/components/Root";
 import "normalize.css/normalize.css";
+import "./src/styles/global.scss";
 
 var endpoints = {
     "messages_list": "http://localhost:8080/messages"

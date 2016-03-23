@@ -4,15 +4,17 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --progress --colors --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-prod": "webpack -p --progress --colors --watch"
   },
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
     "jquery": "2.2.0",
+    "node-sass": "^3.4.2",
     "normalize.css": "^4.0.0",
     "react": "^0.14.5",
     "react-dom": "^0.14.5",
+    "sass-loader": "^3.2.0",
     "sizzle": "^2.3.0"
   },
   "devDependencies": {

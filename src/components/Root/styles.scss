@@ -1,11 +1,35 @@
+@import "../../styles/variables.scss";
+
 .Viewport {
     display: flex;
+    flex-direction: column;
+    color: $primary;
+}
+
+.Row {
+    display: flex;
     flex-direction: row;
+}
+
+.Row-first {
+    composes: Row;
+    height: 5%;
+}
+
+.Row-second {
+    composes: Row;
+    height: 95%;
 }
 
 .Column {
     box-sizing: border-box;
     height: 100%;
+}
+
+.Column-full {
+    composes: Column;
+    width: 100%;
+    background-color: #fefefe;
 }
 
 .Column-left {

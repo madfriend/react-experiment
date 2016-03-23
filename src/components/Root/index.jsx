@@ -5,7 +5,7 @@ import FolderList from "../FolderList";
 import MessageList from "../MessageList";
 import MessageView from "../MessageView";
 
-import styles from "./styles.css";
+import styles from "./styles.scss";
 
 import $ from "jquery/src/core";
 import "jquery/src/ajax";
@@ -30,14 +30,19 @@ class Root extends React.Component {
 
         return (
             <div styleName="Viewport">
-                <div styleName="Column-left">
-                    <FolderList folders={folders} />
+                <div styleName="Row-first">
+                    <div styleName="Column-full">Header component</div>
                 </div>
-                <div styleName="Column-middle">
-                    <MessageList />
-                </div>
-                <div styleName="Column-right">
-                    <MessageView />
+                <div styleName="Row-second">
+                    <div styleName="Column-left">
+                        <FolderList folders={folders} />
+                    </div>
+                    <div styleName="Column-middle">
+                        <MessageList />
+                    </div>
+                    <div styleName="Column-right">
+                        <MessageView />
+                    </div>
                 </div>
             </div>
         )
