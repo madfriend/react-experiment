@@ -1,8 +1,8 @@
 {
   "folders": [
-    {{#repeat 5}}
+    {{#each folders}}
     {
-        "name": "{{company}}",
+        "name": "{{this}}",
         "id": "{{guid}}",
         "messages": [
             {{#repeat 30}}
@@ -18,7 +18,7 @@
             }
             {{/repeat}}
         ]
-    }
-    {{/repeat}}
+    }{{#if @last}}{{else}},{{/if}}
+    {{/each}}
   ]
 }

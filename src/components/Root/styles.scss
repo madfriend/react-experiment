@@ -3,7 +3,7 @@
 .Viewport {
     display: flex;
     flex-direction: column;
-    color: $primary;
+    color: $color-text-dark;
 }
 
 .Row {
@@ -29,21 +29,20 @@
 .Column-full {
     composes: Column;
     width: 100%;
-    background-color: #fefefe;
+    color: $color-text-dark;
 }
 
 .Column-left {
     composes: Column;
     width: 10%;
-    /* todo: import colors from ... sass? */;
-    background-color: #252A3A;
-    color: #eee;
+    background-color: $color-background-dark;
+    color: $color-text-light;
 }
 
 .Column-middle {
     composes: Column;
     width: 30%;
-    background-color: #f3f3f3;
+    background-color: $color-background-light;
 }
 
 .Column-right {
