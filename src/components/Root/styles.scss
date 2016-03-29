@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@import "../../styles/global.scss";
 
 .Viewport {
     display: flex;
@@ -13,12 +13,12 @@
 
 .Row-first {
     composes: Row;
-    height: 5%;
+    height: 2.5rem;
 }
 
 .Row-second {
     composes: Row;
-    height: 95%;
+    height: calc(100% - 2.5rem);
 }
 
 .Column {
@@ -34,18 +34,18 @@
 
 .Column-left {
     composes: Column;
-    width: 10%;
+    @include grid-column-behavior(2);
     background-color: $color-background-dark;
     color: $color-text-light;
 }
 
 .Column-middle {
     composes: Column;
-    width: 30%;
+    @include grid-column-behavior(4);
     background-color: $color-background-light;
 }
 
 .Column-right {
     composes: Column;
-    width: 60%;
+    @include grid-column-behavior(6);
 }

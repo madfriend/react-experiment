@@ -3,3 +3,82 @@
 html {
     font-family: "Proxima Nova", sans-serif;
 }
+
+
+@mixin root-font($size) {
+    html {
+        font-size: $size;
+    }
+}
+
+/* desktop++ */
+@media (min-width: 1441px) {
+    @include root-font(17px);
+}
+/* desktop+ */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    @include root-font(15px);
+}
+/* tablet+ */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    @include root-font(15px);
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    @include root-font(15px);
+}
+/* phone iphone 6+ */
+@media (min-width: 414px) and (max-width: 767px) {
+    @include root-font(14px);
+}
+/* phone iphone 6 */
+@media (min-width: 375px) and (max-width: 413px) {
+    @include root-font(14px);
+}
+/* phone 360 */
+@media (min-width: 360px) and (max-width: 374px) {
+    @include root-font(13px);
+}
+/* phone 320 */
+@media (max-width: 359px) {
+    @include root-font(13px);
+}
+
+@function grid-column-width($num-cols, $base, $gap) {
+    @return ($num-cols * $base + ($num-cols - 1) * $gap)+px;
+}
+
+@mixin grid-column-behavior($num-cols) {
+    /* desktop++ */
+    @media (min-width: 1441px) {
+        width: grid-column-width($num-cols, 80, 30); /* 1410 */
+    }
+    /* desktop+ */
+    @media (min-width: 1281px) and (max-width: 1440px) {
+        width: grid-column-width($num-cols, 60, 30); /* 1170 */
+    }
+    /* tablet+ */
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        width: grid-column-width($num-cols, 50, 32); /* 1024 */
+    }
+    /* tablet */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        width: grid-column-width($num-cols, 42, 20); /* 768 */
+    }
+    /* phone iphone 6+ */
+    @media (min-width: 414px) and (max-width: 767px) {
+        width: grid-column-width($num-cols, 40, 16); /* 414 */
+    }
+    /* phone iphone 6 */
+    @media (min-width: 375px) and (max-width: 413px) {
+        width: grid-column-width($num-cols, 45, 15); /* 375 */
+    }
+    /* phone 360 */
+    @media (min-width: 360px) and (max-width: 374px) {
+        width: grid-column-width($num-cols, 40, 16); /* 360 */
+    }
+    /* phone 320 */
+    @media (max-width: 359px) {
+        width: grid-column-width($num-cols, 36, 14); /* 320 */
+    }
+}
